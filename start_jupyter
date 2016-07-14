@@ -8,4 +8,4 @@ mv /app/disable-warnings.py /app/.ipython/profile_default/startup/disable-warnin
 
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
-	--config=jupyterconfig.py notebooks
+	--config=jupyterconfig.py -W ignore notebooks
