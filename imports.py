@@ -1,5 +1,7 @@
 import warnings
 warnings.filterwarnings("ignore")
+import logging
+logging.getLogger("FFC").setLevel(logging.ERROR)
 
 def get():
     import connection as c
@@ -15,5 +17,7 @@ def get():
     matplotlib.rcParams['figure.figsize'] = (8.0, 6.0)
     import numpy as np
     import insertest as insert
+    import logging as l
+    l.getLogger("FFC").setLevel(logging.ERROR)
 
-    return c, db, de, display, pd, dt, plt, np, insert
+    return c, db, de, display, pd, dt, plt, np, insert, l
