@@ -1,11 +1,4 @@
-import warnings
-warnings.filterwarnings("ignore")
-import logging
-logging.getLogger("FFC").setLevel(logging.ERROR)
-import matplotlib as mpl
-font_cache_path = mpl.get_cachedir() + '/fontList.cache'
-import os
-os.system('rm '+ font_cache_path)
+
 
 def get():
     import connection as c
