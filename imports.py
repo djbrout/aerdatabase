@@ -9,7 +9,7 @@ def get():
     import matplotlib.pyplot as plt
     import matplotlib
     matplotlib.style.use('ggplot')
-    matplotlib.rcParams['figure.figsize'] = (12.0, 8.0)
+    matplotlib.rcParams['figure.figsize'] = (12.0, 5.0)
     import numpy as np
     import insertest as insert
     import logging as l
