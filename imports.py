@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore")
+
 def get():
     import connection as c
     db,de = c.con()
