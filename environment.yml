@@ -10,6 +10,7 @@ dependencies:
   - psycopg2
   - six
   - sqlalchemy
+  - matplotlib
   - nose
   - pip:
     - git+git://github.com/pl31/pgcontents.git
