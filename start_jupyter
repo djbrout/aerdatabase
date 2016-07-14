@@ -4,9 +4,6 @@ pgcontents init -l $DATABASE_URL --no-prompt
 
 export PYTHONPATH=$PYTHONPATH:'/app'
 
-yes | conda install matplotlib
-yes | conda install pandas
-
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
 	--config=jupyterconfig.py notebooks
