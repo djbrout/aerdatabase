@@ -4,6 +4,10 @@ pgcontents init -l $DATABASE_URL --no-prompt
 
 export PYTHONPATH=$PYTHONPATH:'/app'
 
+rm /app/.ipython/profile_default/startup/disable-warnings.py
+echo 'import warnings' >> /app/.ipython/profile_default/startup/disable-warnings.py
+echo "warnings.filterwarnings('ignore')" >> /app/.ipython/profile_default/startup/disable-warnings.py
+
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
 	--config=jupyterconfig.py notebooks
