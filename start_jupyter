@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
+mv /app/disable-warnings.py /app/.ipython/profile_default/startup/disable-warnings.py
+
 pgcontents init -l $DATABASE_URL --no-prompt
 
 export PYTHONPATH=$PYTHONPATH:'/app'
 
-mv /app/disable-warnings.py /app/.ipython/profile_default/startup/disable-warnings.py
-
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
-	--config=jupyterconfig.py -W ignore notebooks
+	--config=jupyterconfig.py notebooks
