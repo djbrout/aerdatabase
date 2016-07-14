@@ -14,9 +14,6 @@ def get():
     matplotlib.style.use('ggplot')
     matplotlib.rcParams['figure.figsize'] = (8.0, 6.0)
     import numpy as np
-    from IPython.core.display import HTML
-    import urllib.request
-    HTML(urllib.request.urlopen('http://bit.ly/1Bf5Hft').read())
     import insertest as insert
 
     return c, db, de, display, pd, dt, plt, np, insert
