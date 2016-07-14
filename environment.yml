@@ -13,4 +13,5 @@ dependencies:
   - nose
   - pip:
     - git+git://github.com/pl31/pgcontents.git
-    - git+git://github.com/pudo/dataset/git
+    - git+git://github.com/pudo/dataset.git
+    - matplotlib
