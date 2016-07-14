@@ -2,6 +2,10 @@ import warnings
 warnings.filterwarnings("ignore")
 import logging
 logging.getLogger("FFC").setLevel(logging.ERROR)
+import matplotlib as mpl
+font_cache_path = mpl.get_cachedir() + '/fontList.cache'
+import os
+os.system('rm '+ font_cache_path)
 
 def get():
     import connection as c
@@ -18,6 +22,6 @@ def get():
     import numpy as np
     import insertest as insert
     import logging as l
-    l.getLogger("FFC").setLevel(logging.ERROR)
+    l.getLogger("FFC").setLevel(l.ERROR)
 
     return c, db, de, display, pd, dt, plt, np, insert, l
