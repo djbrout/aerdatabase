@@ -9,7 +9,9 @@ dependencies:
   - mako
   - psycopg2
   - six
+  - urllib2
   - sqlalchemy
   - nose
   - pip:
     - git+git://github.com/pl31/pgcontents.git
+    - git+git://github.com/pudo/dataset/git
