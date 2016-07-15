@@ -28,7 +28,7 @@ try:
         c.PostgresContentsManager.user_id = 'heroku'
 
         # Set a maximum file size, if desired.
-        #c.PostgresContentsManager.max_file_size_bytes = 1000000 # 1MB File cap
+        c.PostgresContentsManager.max_file_size_bytes = 100000000 # 100MB File cap
 
 except Exception:
     traceback.print_exc()
