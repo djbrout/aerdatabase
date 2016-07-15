@@ -6,6 +6,7 @@ pgcontents init -l $DATABASE_URL --no-prompt
 
 export PYTHONPATH=$PYTHONPATH:'/app'
 
+jupyter nbextension enable --py --sys-prefix widgetsnbextension
 jupyter nbextension install --py fileupload
 jupyter nbextension enable --py fileupload
 

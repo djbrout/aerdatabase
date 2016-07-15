@@ -16,4 +16,4 @@ dependencies:
     - git+git://github.com/pudo/dataset.git
     - matplotlib
     - pandas
-    - fileupload
+    - git+git://github.com/peteut/ipython-file-upload.git#4593e489630d113ab066ce206d91908f09c0248a
